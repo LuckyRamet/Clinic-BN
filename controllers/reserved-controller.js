@@ -60,7 +60,7 @@ exports.creacteBooking = async (req, res, next) => {
 exports.statusReserve = async (req, res, next) => {
     const { bookingId } = req.params
     const { status, notes, seen } = req.body
-    console.log('data',{status, notes, seen})
+
     try {
         const booking = await db.booking.update({
             where: {
