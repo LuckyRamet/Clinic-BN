@@ -26,7 +26,8 @@
     "jsonwebtoken": "^9.0.2",
     "nodemon": "^3.1.7",
     "railway": "^2.0.17",
-    "thaiid": "^1.1.2"
+    "thaiid": "^1.1.2",
+    "vercel": "^37.6.0"
   },
   "devDependencies": {
     "prisma": "^5.9.0"
