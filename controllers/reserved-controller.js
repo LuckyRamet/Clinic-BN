@@ -15,7 +15,16 @@ exports.showBooking = async (req, res, next) => {
         next(error)
     }
 }
-
+exports.showBookings = async (req, res, next) => {
+    try {
+        const rs = await db.booking.findMany({
+            
+        })
+        res.json(rs)
+    } catch (error) {
+        next(error)
+    }
+}
 exports.adminShowBooking = async (req, res, next) => {
     try {
         const rs = await db.booking.findMany({})
